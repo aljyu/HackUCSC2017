@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <meta charset="utf-8" />
 
 <html>
@@ -12,8 +12,8 @@
 		<!--Bootstrap-->
 		<link href ="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href ="bootstrap-3.3.7-dist/js/bootstrap.min.js" rel="stylesheet">
-		<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" rel="stylesheet"></link>
-    	<link href="bootstrap-3.3.7-dist/css/bootstrap.css.map" rel="stylesheet"></link>
+		<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" rel="stylesheet">
+    	<link href="bootstrap-3.3.7-dist/css/bootstrap.css.map" rel="stylesheet">
     	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		<link href ="style.css" rel="stylesheet">
 	</head>
@@ -25,25 +25,24 @@
 	</div>
 	<div class="jumbotron">
 		<h2 id = "head2">Data Collection</h2>
-        
         <table>
             <tbody>
                 <tr><td>Device Identifier</td><td>Choose Action</td></tr>
-                <tr><td></td><td><div class="dropdown">
-		    <button class="btn btn-primary dropdown-menu-right" type="button" data-toggle="dropdown">Select status</button>
-
-		    <ul class="dropdown-menu" role="menu"> 
-		    	<li role="presentation"><a role="menuitem">Complete</a></li>
-		    	<li role="presentation"><a role="menuitem">In Progress</a></li>
-		    	<li role="presentation"><a role="menuitem">Queued</a></li>
-		    </ul>
-
-		</div></td></tr>
+                <tr><td></td><td>
+                    <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Select status
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu"> 
+                        <li><a role="menuitem">Complete</a></li>
+                        <li><a role="menuitem">In Progress</a></li>
+                        <li><a role="menuitem">Queued</a></li>
+                    </ul></div>
+                </td></tr>
             </tbody>
          </table>
-         
 	</div>
-
-
 	</body>
 </html>
