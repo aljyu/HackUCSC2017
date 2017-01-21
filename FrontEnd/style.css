@@ -7,6 +7,22 @@
 
 }
 
+.row-1{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.ca{
+	float: right;
+	width: 33%;
+
+}
+
+.dia{
+	float: left;
+	width: 33%;
+}
+
 .container{
 	text-align: center;
 }
