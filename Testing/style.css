@@ -1,7 +1,10 @@
-.jumbotron{
+#head2{
 	text-align: center;
-	margin: 0px auto;
+}
 
+.jumbotron {
+    text-align: center;
+	margin: 0px auto;
 }
 
 .container{

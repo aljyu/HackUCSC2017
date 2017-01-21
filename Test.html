@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {font-family: verdana; font-size: 12px; text-transform:capitalize;} 
+#content {margin: 20px;}
+table,th,td {border:1px solid #d1d1d1; padding: 12px;}
+</style>
+</head>
+<body>
+
+<div id="content">
+
+<h1>Product Details</h1>
+
+<?php
+
+$con=mysqli_connect("SERVERINFO","DATABASE","USER","PASS");
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+
+$result = mysqli_query($con,"SELECT * FROM products");
+
+<table border='1' cell-padding='2'>
+<tr>
+<th>ID</th>
+<th>Prodcut</th>
+<th>Price</th>
+<th>Availabitly</th>
+</tr>
+
+
+<form method="post" action="Test2.php">
+<select name="availabillity">
+<option>available</option>
+<option>not available</option>
+</select>
+<input type="text" name="price">
+<button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
