@@ -1,0 +1,19 @@
+.jumbotron{
+	text-align: center;
+	margin: 0px auto;
+
+}
+
+.container{
+	text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    height: 2em;
+}
