@@ -7,8 +7,9 @@
 	margin: 0px auto;
 }
 
-.dropdown-menu{
-	
+li{
+	cursor: pointer;
+	cursor: hand;
 }
 
 .container{

@@ -27,8 +27,15 @@
 		<h2 id = "head2">Data Collection</h2>
         <table>
             <tbody>
-                <tr><td>Device Identifier</td><td>Choose Action</td></tr>
-                <tr><td></td><td>
+                <tr>
+                	<td>Device Identifier</td>
+                	<td>Choose Action</td>
+                </tr>
+                <tr>
+                <td>
+                MAC Address
+                </td>
+                <td>
 
                     <div class="btn-group">
 	                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -42,7 +49,38 @@
                     	</ul>
                 	</div>
 
-                </td></tr>
+                </td>
+                </tr>
+            </tbody>
+         </table>
+         <hr>
+         <!--Test-->
+         <table>
+            <tbody>
+                <tr>
+                	<td>Device Identifier</td>
+                	<td>Choose Action</td>
+                </tr>
+                <tr>
+                <td>
+                MAC Address
+                </td>
+                <td>
+
+                    <div class="btn-group">
+	                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+	                        Select status
+	                        <span class="caret"></span>
+	                    </button>
+	                    <ul class="dropdown-menu" role="menu"> 
+                        <li><a role="menuitem">Complete</a></li>
+                        <li><a role="menuitem">In Progress</a></li>
+                        <li><a role="menuitem">Queued</a></li>
+                    	</ul>
+                	</div>
+
+                </td>
+                </tr>
             </tbody>
          </table>
 
@@ -50,8 +88,12 @@
 	<script>
 	$(".dropdown-menu li a").click(function(){
   		var text = $(this).text();
-  		$(this).parents('.btn-group').find('.dropdown-toggle').html(text + ' <span class="caret"></span>');
+  		var text2= $(this).parents('.btn-group');
+  		text2.find('.dropdown-toggle').html(text + ' <span class="caret"></span>');
 	});
+
+
+
 	
 	</script>
 	</body>
